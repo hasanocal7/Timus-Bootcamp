@@ -104,282 +104,265 @@ Hangi değişken tanımlama anahtar kelimesini kullanmanız gerektiği, değişk
 ## <a name="_7w803qdhc29g"></a>**Bölüm 1. Dizi özellikleri**
 - [length](https://www.javascripttutorial.net/javascript-array-length/) – bir dizinin uzunluk özelliğini etkili bir şekilde nasıl kullanacağınızı gösterir.
 
-```
+```javascript
 let arr = [1, 2, 3]
 console.log(arr.length)
+// Output: 3
 ```
 
-// Output: 3
 ## <a name="_ktso73vwvph"></a>**Bölüm 2. Elemanların eklenmesi/silinmesi**
 - [push()](https://www-javascripttutorial-net.translate.goog/javascript-array-push/?_x_tr_sl=auto&_x_tr_tl=tr&_x_tr_hl=tr) – bir dizinin sonuna bir veya daha fazla öğe ekler.
 
+```javascript
 let arr = [1, 2, 3]
-
 arr.push(4)
-
 console.log(arr)
-
 // Output: [ 1, 2, 3, 4 ]
+```
 
 - [unshift()](https://www-javascripttutorial-net.translate.goog/javascript-array-unshift/?_x_tr_sl=auto&_x_tr_tl=tr&_x_tr_hl=tr) – dizinin başına bir veya daha fazla öğe ekler.
 
+```javascript
 let arr = [1, 2, 3]
-
 arr.unshift(0)
-
 console.log(arr)
-
 // Output: [ 0, 1, 2, 3 ]
+```
 
 - [pop()](https://www-javascripttutorial-net.translate.goog/javascript-array-pop/?_x_tr_sl=auto&_x_tr_tl=tr&_x_tr_hl=tr) – dizinin sonundaki bir öğeyi kaldırır.
 
+```javascript
 let arr = [1, 2, 3]
-
 arr.pop()
-
 console.log(arr)
-
 // Output: [ 1, 2 ]
+```
 
 - [shift()](https://www-javascripttutorial-net.translate.goog/javascript-array-shift/?_x_tr_sl=auto&_x_tr_tl=tr&_x_tr_hl=tr) – dizideki ilk öğeyi kaldırır.
 
+```javascript
 let arr = [1, 2, 3]
-
 arr.shift()
-
 console.log(arr)
-
 // Output: [ 2, 3 ]
+```
 
 - [splice()](https://www-javascripttutorial-net.translate.goog/javascript-array-splice/?_x_tr_sl=auto&_x_tr_tl=tr&_x_tr_hl=tr) – öğeleri silmek, eklemek ve değiştirmek gibi bir dizideki öğeleri kırpar.
 
+```javascript
 let arr = [1, 2, 3, 4, 5]
-
 arr.splice(1, 3)
-
 console.log(arr)
-
 // Output: [ 1, 5 ]
+```
 
 - [slice()](https://www-javascripttutorial-net.translate.goog/javascript-array-slice/?_x_tr_sl=auto&_x_tr_tl=tr&_x_tr_hl=tr) – bir dizinin öğelerini kopyalar.
 
+```javascript
 let arr = [1, 2, 3]
-
 console.log(arr.slice(1, 3))
+```
 
 // Output: 3
 ## <a name="_aj144yg8yyxs"></a>**Bölüm 3. Elemanların bulunması**
 - [indexOf()](https://www-javascripttutorial-net.translate.goog/javascript-array-indexof/?_x_tr_sl=auto&_x_tr_tl=tr&_x_tr_hl=tr) – dizideki bir öğeyi bulur.
 
+```javascript
 let arr = [1, 2, 3]
-
 console.log(arr.indexOf(2))
-
 // Output: 1
+```
 
 - [includes()](https://www-javascripttutorial-net.translate.goog/es-next/javascript-array-includes/?_x_tr_sl=auto&_x_tr_tl=tr&_x_tr_hl=tr) – bir öğenin dizide olup olmadığını kontrol eder.
 
+```javascript
 let arr = [1, 2, 3]
-
 console.log(arr.includes(2))
-
 // Output: true
+```
 
 - [find()](https://www-javascripttutorial-net.translate.goog/es6/javascript-array-find/?_x_tr_sl=auto&_x_tr_tl=tr&_x_tr_hl=tr) – dizideki bir öğeyi bulur.
 
+```javascript
 let arr = [1, 2, 3]
-
 console.log(arr.find(elm => elm % 2 == 0))
-
 // Output: 2
+```
 
 - [findIndex()](https://www-javascripttutorial-net.translate.goog/es6/javascript-array-findindex/?_x_tr_sl=auto&_x_tr_tl=tr&_x_tr_hl=tr) – bir dizideki bir öğenin indeksini bulur.
 
+```javascript
 let arr = [1, 2, 3]
-
 console.log(arr.findIndex(elm => elm % 2 == 0))
-
 // Output: 1
+```
+
+
 ## <a name="_ir5i2svjwtdd"></a>**Bölüm 4. Yüksek seviyeli metodlar**
 - [map()](https://www-javascripttutorial-net.translate.goog/javascript-array-map/?_x_tr_sl=auto&_x_tr_tl=tr&_x_tr_hl=tr) – dizi elemanlarını dönüştürür.
 
+```javascript
 let arr = [1, 2, 3]
-
-console.log(arr.map((elm) => elm \*\* 2))
-
+console.log(arr.map((elm) => elm ** 2))
 // Output: [ 1, 4, 9 ]
+```
 
 - [filter()](https://www-javascripttutorial-net.translate.goog/javascript-array-filter/?_x_tr_sl=auto&_x_tr_tl=tr&_x_tr_hl=tr) – bir dizideki öğeleri filtreler
 
+```javascript
 let arr = [1, 2, 3]
-
 console.log(arr.filter((elm) => elm % 2 == 1))
-
 // Output: [ 1, 3 ]
+```
 
 - [reduce()](https://www-javascripttutorial-net.translate.goog/javascript-array-reduce/?_x_tr_sl=auto&_x_tr_tl=tr&_x_tr_hl=tr) – bir dizinin öğelerini bir değere arttırır veya azaltır.
 
+```javascript
 let arr = [1, 2, 3]
-
 console.log(arr.reduce((elm, sonrakiElm) => elm + sonrakiElm))
-
 // Output: 6
-
+```
 
 - [every()](https://www-javascripttutorial-net.translate.goog/javascript-every/?_x_tr_sl=auto&_x_tr_tl=tr&_x_tr_hl=tr) – dizideki her öğenin bir testi geçip geçmediğini kontrol edin.
 
+```javascript
 let arr = [2, 4, 6, 8]
-
 console.log(arr.every((elm) => elm % 2 == 0)) // Bir false tüm testi etkiler.
-
 // Output: true
+```
 
 - [some()](https://www-javascripttutorial-net.translate.goog/javascript-array-some/?_x_tr_sl=auto&_x_tr_tl=tr&_x_tr_hl=tr) – dizideki en az bir öğenin testi geçip geçmediğini kontrol edin.
 
+```javascript
 let arr = [1, 2, 3, 5, 7]
-
 console.log(arr.some((elm) => elm % 2 == 0))
-
 // Output: true
+```
 
 - [sort()](https://www-javascripttutorial-net.translate.goog/javascript-array-sort/?_x_tr_sl=auto&_x_tr_tl=tr&_x_tr_hl=tr) – bir dizideki öğeleri sıralar.
 
+```javascript
 let arr = [3, 7, 5, 1, 2]
-
 console.log(arr.sort())
-
 // Output: [ 1, 2, 3, 5, 7 ]
+```
 
 - [forEach()](https://www-javascripttutorial-net.translate.goog/javascript-array-foreach/?_x_tr_sl=auto&_x_tr_tl=tr&_x_tr_hl=tr) – dizi öğeleri arasında döngü yapar.
 
+```javascript
 let arr = [3, 7, 5, 1, 2]
-
 let toplam = 0;
-
 arr.forEach((eleman) => {
-
-`    `toplam = toplam + eleman
-
+   toplam = toplam + eleman
 })
-
 console.log(toplam / arr.length)
-
 // Output: 3.6
+```
+
 ##
 ##
 ## <a name="_h2j56tc7di19"></a><a name="_34ayrrtnrl3o"></a><a name="_vuts4thwjttz"></a>**Bölüm 5. Dizileri Değiştirmek**
 - [concat()](https://www.javascripttutorial.net/javascript-array-concat/) – iki diziyi bir dizide birleştirir.
 
+```javascript
 let arr1 = [3, 7, 5, 1, 2]
-
 let arr2 = [13, 4, 8, 6, 9]
-
 console.log(arr1.concat(arr2))
-
 // Output: [ 3, 7, 5, 1, 2, 13, 4, 8, 6, 9 ]
+```
+
+
 ## <a name="_q3zukj2jc66d"></a>**Bölüm 6. Dizi Oluşturma**
 - [of()](https://www-javascripttutorial-net.translate.goog/es6/array-of/?_x_tr_sl=auto&_x_tr_tl=tr&_x_tr_hl=tr) – dizi oluşturmayı iyileştirir.
 
+```javascript
 let arr = Array.of(7, 3, 4, 9, 8, 1, 6)
-
 console.log(arr)
-
 // Output: [ 7, 3, 4, 9, 8, 1, 6 ]
+```
 
 - [from()](https://www-javascripttutorial-net.translate.goog/es6/array-from/?_x_tr_sl=auto&_x_tr_tl=tr&_x_tr_hl=tr) – dizi benzeri veya yinelenebilir nesnelerden diziler oluşturur.
 
+```javascript
 function multiplicationBy3() {
-
-`    `return Array.from(arguments, x => x \* 3)
-
+   return Array.from(arguments, x => x \* 3)
 }
-
 console.log(multiplicationBy3(7, 3, 1, 9))
+```
+
 ## <a name="_jvu8jpvfldtv"></a>**Bölüm 7. Flattening arrays**
 - [flat()](https://www-javascripttutorial-net.translate.goog/es-next/javascript-array-flat/?_x_tr_sl=auto&_x_tr_tl=tr&_x_tr_hl=tr) – bir diziyi belirli bir derinliğe kadar yinelemeli olarak düzleştirir.
 
+```javascript
 let arr = [[7, 3, 1, 9],[8, 4, 6, 2]]
-
 console.log(arr.flat())
-
 // Output: [ 7, 3, 1, 9, 8, 4, 6, 2 ]
-
+```
 
 - [flatMap()](https://www-javascripttutorial-net.translate.goog/es-next/javascript-array-flatmap/?_x_tr_sl=auto&_x_tr_tl=tr&_x_tr_hl=tr) – her öğe üzerinde bir eşleme işlevi yürütün ve sonucu düzleştirin.
 
+```javascript
 let arr = [1, 4, 2, 5]
-
 arr = arr.flatMap((elm) => elm % 2 == 0 ? [elm \* 2, elm \* 3] : elm)
-
 console.log(arr)
-
 // Output: [ 1, 8, 12, 4, 6, 5 ]
+```
+
 ## <a name="_w3nbnllxc2w0"></a>**Bölüm 8. Dizilerden Dizelere**
 - [join()](https://www-javascripttutorial-net.translate.goog/javascript-array-join/?_x_tr_sl=auto&_x_tr_tl=tr&_x_tr_hl=tr) – bir dizinin tüm öğelerini ayırıcıyla ayrılmış bir dizede birleştirir.
 
+```javascript
 let arr = ["Hi!", "I", "am", "Hasan"]
-
 const str = arr.join(' ')
-
 console.log(str)
-
 // Output: Hi! I am Hasan
+```
+
 ## <a name="_v5sc4gixk9ry"></a>**Bölüm 9. Gelişmiş İşlemler**
 - [Destructuring](https://www-javascripttutorial-net.translate.goog/es6/destructuring/?_x_tr_sl=auto&_x_tr_tl=tr&_x_tr_hl=tr) – bir dizinin öğelerini değişkenlere nasıl atayacağınızı gösterir.
 
+```javascript
 function message() {
-
-`    `return ["Hi!", "I", "am", "Hasan"]
-
+   return ["Hi!", "I", "am", "Hasan"]
 }
-
 let arr = message()
-
 console.log(arr[0], arr[arr.length-1])
-
 // Output: Hi! Hasan
-
-
+```
 
 - [Spread operator](https://www-javascripttutorial-net.translate.goog/es6/javascript-spread/?_x_tr_sl=auto&_x_tr_tl=tr&_x_tr_hl=tr) – yayılma operatörünün etkili bir şekilde nasıl kullanılacağını öğrenin.
 
+```javascript
 let body = ["Hasan", "Öcal"]
-
 let user = [...body, "Antalya"]
-
 console.log(user)
-
 // Output: [ 'Hasan', 'Öcal', 'Antalya' ]
+```
+
 ## <a name="_hgko5lm114sr"></a>**Bölüm 10. Erişim elemanları**
 - [at()](https://www-javascripttutorial-net.translate.goog/javascript-array-at/?_x_tr_sl=auto&_x_tr_tl=tr&_x_tr_hl=tr) – hem pozitif hem de negatif indeksleri kullanarak dizi öğelerine erişin.
 
+```javascript
 let arr = [1, 6, 8, 4]
-
 console.log(arr.at(-1))
-
 // Output: 4
+```
+
 ## <a name="_8dfrxrpkal32"></a>**Bölüm 11. Çok Boyutlu Dizi**
 - [Multidimensional Array](https://www-javascripttutorial-net.translate.goog/javascript-multidimensional-array/?_x_tr_sl=auto&_x_tr_tl=tr&_x_tr_hl=tr) – JavaScript'te çok boyutlu dizilerle nasıl çalıştığını öğrenin.
 
+```javascript
 let arr = [["Hasan", "Backend"], ["Mert", "Backend"], ["Aysu", "Frontend"]]
-
 console.table(arr)
-
 // OUTPUT:
-
 //┌─────────┬─────────┬────────────┐
-
 //│ (index) │    0    │     1      │
-
 //├─────────┼─────────┼────────────┤
-
 //│    0    │ 'Hasan' │ 'Backend'  │
-
 //│    1    │ 'Mert'  │ 'Backend'  │
-
 //│    2    │ 'Aysu'  │ 'Frontend' │
-
 //└─────────┴─────────┴────────────┘
+```
 
 **do..while**
 
