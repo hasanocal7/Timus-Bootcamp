@@ -1,33 +1,33 @@
 ﻿   ## TIMUS FULLSTACK BOOTCAMP ÖDEV NOTLARIM - Hafta 1 ##
 
 
-**Javascript nedir? Javascript'in Tarihsel Gelişimi**
+# Javascript nedir? Javascript'in Tarihsel Gelişimi #
 
 JavaScript, [Brendan Eich](https://www.google.com/search?sca_esv=575755605&q=Brendan+Eich&si=ALGXSlYh1-GEPndq7qMo--O-TPixQtNN4JMroSxgItz5kq0stOtk3MR2PK1MW62c_g68umDUwPYvdjOu-VvCYdLZJnFkjEjhy4bfTWACvLEAemSbmrJuid5V53UdEX9AvBbdn-mpOeMNg8oEwFy8Nr889gJMfpqOylZiuUJHPb2eisHJawQ7A1k-vI2ESyFsFBMoAfLdm3bZ&sa=X&ved=2ahUKEwiFr4vLhYyCAxVHX_EDHTpiAjgQmxMoAXoECEsQAw) tarafından tasarlanan,  HTML ve CSS ile birlikte World Wide Web'in temel teknolojilerinden biri olan programlama dilidir. Web sitelerinin %97'sinden fazlası, web sayfası hareketleri için istemci tarafında JavaScript kullanırlar ve kullanılan kodlar genellikle üçüncü taraf kitaplıkları içerir.
 
 JavaScript'in tarihi, 1990 ların sonlarına dayanır ve o zamandan bu yana büyük bir gelişme göstermiştir. İşte JavaScript'in tarihi ve önemli kilometre taşları:
 
-   **1995: İlk JavaScript Sürümü -**  Netscape Communications, web tarayıcıları için JavaScript'i geliştirmeye başladı ve ilk sürümü Navigator 2.0'da tanıttı.
+   - **1995: İlk JavaScript Sürümü -**  Netscape Communications, web tarayıcıları için JavaScript'i geliştirmeye başladı ve ilk sürümü Navigator 2.0'da tanıttı.
 
-   **1996: JavaScript Standartlaştırması -**  JavaScript, ECMAScript adı altında bir standart haline geldi. ECMAScript, dilin tanımını ve özelliklerini belirler.
+   - **1996: JavaScript Standartlaştırması -**  JavaScript, ECMAScript adı altında bir standart haline geldi. ECMAScript, dilin tanımını ve özelliklerini belirler.
 
-   **2000: ECMAScript 3.0 -**  ECMAScript 3, JavaScript'in yaygın olarak kullanılan bir versiyonu haline geldi ve tarayıcılar bu sürümü desteklemeye başladı.
+   - **2000: ECMAScript 3.0 -**  ECMAScript 3, JavaScript'in yaygın olarak kullanılan bir versiyonu haline geldi ve tarayıcılar bu sürümü desteklemeye başladı.
 
-   **2005: AJAX'ın Yükselişi -** Asenkron JavaScript ve XML (AJAX), web uygulamalarının daha dinamik ve etkileşimli hale gelmesini sağlayan bir teknoloji olarak popüler hale geldi.
+   - **2005: AJAX'ın Yükselişi -** Asenkron JavaScript ve XML (AJAX), web uygulamalarının daha dinamik ve etkileşimli hale gelmesini sağlayan bir teknoloji olarak popüler hale geldi.
 
-   **2009: ECMAScript 5.1 -**  Bu sürümle birlikte JavaScript diline birçok yeni özellik eklendi ve eksiklikler giderildi.
+   - **2009: ECMAScript 5.1 -**  Bu sürümle birlikte JavaScript diline birçok yeni özellik eklendi ve eksiklikler giderildi.
 
-   **2015: ECMAScript 6 (ES6) / ECMAScript 2015 -**  Bu büyük güncellemeyle birçok yeni dil özelliği ve sözdizimi güncellemeleri tanıtıldı. Bu sürüm, daha önceki sürümlere göre çok daha modern ve gelişmiş bir JavaScript dilini standartlaştırıldı.
+   - **2015: ECMAScript 6 (ES6) / ECMAScript 2015 -**  Bu büyük güncellemeyle birçok yeni dil özelliği ve sözdizimi güncellemeleri tanıtıldı. Bu sürüm, daha önceki sürümlere göre çok daha modern ve gelişmiş bir JavaScript dilini standartlaştırıldı.
 
-   **2016 ve Sonrası: Yıllık Güncellemeler -**  ECMAScript artık yıllık güncellemelerle geliyor. Her yıl yeni özellikler ekleniyor ve dil sürekli olarak gelişiyor.
+   - **2016 ve Sonrası: Yıllık Güncellemeler -**  ECMAScript artık yıllık güncellemelerle geliyor. Her yıl yeni özellikler ekleniyor ve dil sürekli olarak gelişiyor.
 
-   **2017: Async/Await -** ECMAScript 2017 ile async/await sözdizimi tanıtıldı, bu da asenkron işlemlerin yönetimini kolaylaştırdı.
+   - **2017: Async/Await -** ECMAScript 2017 ile async/await sözdizimi tanıtıldı, bu da asenkron işlemlerin yönetimini kolaylaştırdı.
 
-   **2019: ECMAScript 2019 -** Bu sürümle birlikte Array.flat(), Array.flatMap() gibi yeni yöntemler ve özellikler eklendi.
+   - **2019: ECMAScript 2019 -** Bu sürümle birlikte Array.flat(), Array.flatMap() gibi yeni yöntemler ve özellikler eklendi.
 
-   **2020 ve Sonrası: Güncellemeler Devam Ediyor -** ECMAScript, her yıl yeni özelliklerle güncellenmeye devam ediyor. Modülerlik, performans ve güvenlik iyileştirmeleri de bu güncellemelerin bir parçası olmuştur.
+   - **2020 ve Sonrası: Güncellemeler Devam Ediyor -** ECMAScript, her yıl yeni özelliklerle güncellenmeye devam ediyor. Modülerlik, performans ve güvenlik iyileştirmeleri de bu güncellemelerin bir parçası olmuştur.
 
-   **2021: ECMAScript 2021 -** Bu sürümle birlikte yeni özellikler eklenmiştir, özellikle String.prototype.replaceAll() ve Promise.any() gibi.
+   - **2021: ECMAScript 2021 -** Bu sürümle birlikte yeni özellikler eklenmiştir, özellikle String.prototype.replaceAll() ve Promise.any() gibi.
 
 JavaScript'in gelişimi sadece dilin kendisi ile sınırlı değildir; tarayıcılar, sunucu tarafı uygulamalar ve çeşitli çerçeveler (frameworks) ve kütüphaneler de JavaScript ekosistemini büyük ölçüde etkileyerek daha güçlü ve kullanıcı dostu uygulamaların geliştirilmesine olanak tanımıştır. Bu nedenle, JavaScript'in evrimi sürekli devam etmektedir.
 
