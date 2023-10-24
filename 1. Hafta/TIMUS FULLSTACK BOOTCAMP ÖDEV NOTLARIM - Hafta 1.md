@@ -366,7 +366,7 @@ console.table(arr)
 //└─────────┴─────────┴────────────┘
 ```
 
-## do..while
+## do..while ##
 
 **JavaScript’te do...while döngüsü, döngü işlemlerinin önce bir kez gerçekleştirilmesini sağlar ve ardından belirli bir koşulu kontrol eder. Eğer koşul doğruysa, işlem tekrarlanır. Bu, döngünün en az bir kez çalışmasını garanti eder, çünkü koşul kontrolü döngünün sonunda yapılır. do...while döngüsünün temel sözdizimi şu şekildedir:**
 
@@ -394,7 +394,7 @@ do {
 
 **do...while döngüsü, özellikle bir işlemi en az bir kez gerçekleştirmeniz gerektiğinde veya döngünün sonunda bir koşulu kontrol etmeniz gerektiğinde kullanışlıdır. Ancak diğer döngü türleri olan for ve while gibi, bu döngü de sonsuz döngülere neden olabilir, bu nedenle koşulu dikkatli bir şekilde kontrol etmek önemlidir.**
 
-## for - foreach Arasındaki Fark
+## for - foreach Arasındaki Fark ##
 
 for ve forEach, JavaScript'te döngü işlemlerini gerçekleştirmek için kullanılan iki farklı yöntemdir ve aralarında bazı önemli farklar vardır. İşte bu iki döngü yöntemi arasındaki temel farklar:
 
@@ -424,6 +424,8 @@ for ve forEach, JavaScript'te döngü işlemlerini gerçekleştirmek için kulla
    1. **forEach** ile bu tür kontrol ifadeleri kullanılamaz. forEach işlevi, işlemleri otomatik olarak her öğe için sırayla gerçekleştirir.
 
 Hangi döngü yönteminin kullanılacağı, özellikle işlevin gereksinimlerine ve kodun okunabilirliğine bağlıdır. Genel olarak, bir dizinin her öğesini dolaşmak ve her öğe üzerinde aynı işlemi yapmak istediğinizde forEach kullanmak daha uygun olabilir. Ancak belirli bir koşul altında tekrar sayısını belirlemek ve endekse erişim gerekiyorsa, geleneksel for döngüsü daha uygun olabilir.
+
+## reduce() Kullanımı
 
 ```javascript
 let sepet = [];
