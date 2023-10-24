@@ -1,5 +1,4 @@
-﻿
-**TIMUS FULLSTACK BOOTCAMP ÖDEV NOTLARIM - Hafta 1**
+﻿   ## TIMUS FULLSTACK BOOTCAMP ÖDEV NOTLARIM - Hafta 1 ##
 
 
 **Javascript nedir? Javascript'in Tarihsel Gelişimi**
