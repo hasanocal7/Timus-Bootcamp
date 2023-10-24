@@ -104,9 +104,10 @@ Hangi değişken tanımlama anahtar kelimesini kullanmanız gerektiği, değişk
 ## <a name="_7w803qdhc29g"></a>**Bölüm 1. Dizi özellikleri**
 - [length](https://www.javascripttutorial.net/javascript-array-length/) – bir dizinin uzunluk özelliğini etkili bir şekilde nasıl kullanacağınızı gösterir.
 
-` let arr = [1, 2, 3]
-
-console.log(arr.length) `
+```
+let arr = [1, 2, 3]
+console.log(arr.length)
+```
 
 // Output: 3
 ## <a name="_ktso73vwvph"></a>**Bölüm 2. Elemanların eklenmesi/silinmesi**
