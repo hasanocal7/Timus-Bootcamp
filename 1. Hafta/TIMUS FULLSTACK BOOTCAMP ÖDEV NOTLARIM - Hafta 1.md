@@ -1,7 +1,7 @@
-﻿   ## TIMUS FULLSTACK BOOTCAMP ÖDEV NOTLARIM - Hafta 1 ##
+﻿## TIMUS FULLSTACK BOOTCAMP ÖDEV NOTLARIM - Hafta 1 ##
 
-
-# Javascript nedir? Javascript'in Tarihsel Gelişimi
+#
+## Javascript nedir? Javascript'in Tarihsel Gelişimi
 
 JavaScript, [Brendan Eich](https://www.google.com/search?sca_esv=575755605&q=Brendan+Eich&si=ALGXSlYh1-GEPndq7qMo--O-TPixQtNN4JMroSxgItz5kq0stOtk3MR2PK1MW62c_g68umDUwPYvdjOu-VvCYdLZJnFkjEjhy4bfTWACvLEAemSbmrJuid5V53UdEX9AvBbdn-mpOeMNg8oEwFy8Nr889gJMfpqOylZiuUJHPb2eisHJawQ7A1k-vI2ESyFsFBMoAfLdm3bZ&sa=X&ved=2ahUKEwiFr4vLhYyCAxVHX_EDHTpiAjgQmxMoAXoECEsQAw) tarafından tasarlanan,  HTML ve CSS ile birlikte World Wide Web'in temel teknolojilerinden biri olan programlama dilidir. Web sitelerinin %97'sinden fazlası, web sayfası hareketleri için istemci tarafında JavaScript kullanırlar ve kullanılan kodlar genellikle üçüncü taraf kitaplıkları içerir.
 
