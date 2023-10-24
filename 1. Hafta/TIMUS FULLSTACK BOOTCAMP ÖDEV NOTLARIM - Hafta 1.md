@@ -31,7 +31,7 @@ JavaScript'in tarihi, 1990 ların sonlarına dayanır ve o zamandan bu yana büy
 
 JavaScript'in gelişimi sadece dilin kendisi ile sınırlı değildir; tarayıcılar, sunucu tarafı uygulamalar ve çeşitli çerçeveler (frameworks) ve kütüphaneler de JavaScript ekosistemini büyük ölçüde etkileyerek daha güçlü ve kullanıcı dostu uygulamaların geliştirilmesine olanak tanımıştır. Bu nedenle, JavaScript'in evrimi sürekli devam etmektedir.
 
-**Javascript Veri Türleri**
+## Javascript Veri Türleri ##
 
 JavaScript'te veriler iki temel kategoriye ayrılabilir: primitive (ilkel) veriler ve complex (karmaşık) veriler.
 
@@ -54,49 +54,43 @@ JavaScript'te veriler iki temel kategoriye ayrılabilir: primitive (ilkel) veril
 
 İlkel veriler, değerlerini doğrudan kopyalar ve kendi bellek yönetimine sahiptir. Yani, bir ilkel verinin kopyalanması sadece değeri kopyalar ve orijinal veriyi etkilemez. Öte yandan, karmaşık veriler referans tipleri olduğundan, bir değişkenin başka bir değişkene atanması sadece referansı kopyalar, bu nedenle orijinal veri üzerinde değişiklik yapılırsa diğer değişkenler de etkilenir.
 
-
-
-**Değişken Tanımlama Anahtar Kelimeleri**
+#
+#
+## Değişken Tanımlama Anahtar Kelimeleri ##
 
 var, let, ve const JavaScript dilinde kullanılan üç farklı değişken tanımlama anahtar kelimeleridir ve her biri farklı özelliklere sahiptir. İşte bu üç değişken tanımlama anahtar kelimesinin farkları:
 
 **var:**
 
-      var, eski JavaScript sürümlerinde yaygın olarak kullanılan bir değişken tanımlama anahtar kelimesidir.
+   `var`, eski JavaScript sürümlerinde yaygın olarak kullanılan bir değişken tanımlama anahtar kelimesidir.
 
-      var ile tanımlanan değişkenler işlev (function) kapsamı içinde yer alır. Yani, bir değişken bir işlevin içinde tanımlandığında, sadece bu işlev içinde erişilebilir.
+   `var` ile tanımlanan değişkenler işlev (function) kapsamı içinde yer alır. Yani, bir değişken bir işlevin içinde tanımlandığında, sadece bu işlev içinde erişilebilir.
 
-      Değişken var ile tanımlandığında, değişken yukarıdaki kapsamda "kaldırılır" (hoisted) ve deklarasyonundan önce kullanılabilir, ancak değeri undefined olarak kabul edilir.
+   Değişken `var` ile tanımlandığında, değişken yukarıdaki kapsamda "kaldırılır" (hoisted) ve deklarasyonundan önce kullanılabilir, ancak değeri undefined olarak kabul edilir.
 
-      var ile aynı isimde birden fazla değişken tanımlanabilir ve son tanımlanan değeri alır.
+   `var` ile aynı isimde birden fazla değişken tanımlanabilir ve son tanımlanan değeri alır.
 
-   **let:**
+**let:**
 
-      let, ECMAScript 2015 (ES6) ile tanıtılan ve modern JavaScript kodlamasında yaygın olarak kullanılan bir değişken tanımlama anahtar kelimesidir.
+   `let`, ECMAScript 2015 (ES6) ile tanıtılan ve modern JavaScript kodlamasında yaygın olarak kullanılan bir değişken tanımlama anahtar kelimesidir.
 
-      let ile tanımlanan değişkenler blok kapsamına sahiptir. Yani, bir değişken bir bloğun içinde tanımlandığında, sadece bu blok içinde erişilebilir.
+   `let` ile tanımlanan değişkenler blok kapsamına sahiptir. Yani, bir değişken bir bloğun içinde tanımlandığında, sadece bu blok içinde erişilebilir.
 
-      let ile tanımlanan değişkenler de hoisted olur, ancak başlangıç değerleri undefined yerine başka bir değer alır.
+   `let` ile tanımlanan değişkenler de hoisted olur, ancak başlangıç değerleri undefined yerine başka bir değer alır.
 
-      Aynı isimde bir değişken birden fazla kez aynı kapsamda tanımlanamaz.
+   Aynı isimde bir değişken birden fazla kez aynı kapsamda tanımlanamaz.
 
-   **const:**
+**const:**
 
-      const, yine ES6 ile tanıtılan bir değişken tanımlama anahtar kelimesidir.
+   `const`, yine ES6 ile tanıtılan bir değişken tanımlama anahtar kelimesidir.
 
-      const ile tanımlanan değişkenler, let gibi blok kapsamına sahiptir.
+   `const` ile tanımlanan değişkenler, let gibi blok kapsamına sahiptir.
 
-      Ancak, const ile tanımlanan değişkenlerin değeri bir kez atanır ve daha sonra değiştirilemez (immutable). Yani, bir kez bir değer atandığında, bu değer değiştirilemez.
+   `Ancak`, const ile tanımlanan değişkenlerin değeri bir kez atanır ve daha sonra değiştirilemez (immutable). Yani, bir kez bir değer atandığında, bu değer değiştirilemez.
 
-      const ile aynı isimde bir değişken birden fazla kez aynı kapsamda tanımlanamaz.
+   `const` ile aynı isimde bir değişken birden fazla kez aynı kapsamda tanımlanamaz.
 
 Hangi değişken tanımlama anahtar kelimesini kullanmanız gerektiği, değişkeninin ömrü ve kullanım gereksinimleri size bağlıdır. Genel bir kural olarak, const kullanmayı tercih etmelisiniz, çünkü bu, değerlerin yanlışlıkla değiştirilmesini önler ve kodunuzu daha güvenli hale getirir. Ancak, bir değişkenin değerinin ilerleyen zamanlarda değişmesi gerekiyorsa veya değişkenin kapsamı sınırlıysa, let veya var kullanabilirsiniz.
-
-
-
-
-
-
 
 ##
 ## <a name="_w3i0nnoug06x"></a><a name="_uc5aw7hfda52"></a>**DİZİ(ARRAY) METODLARI**
@@ -444,7 +438,7 @@ else {
 console.log(toplam)
 }
 ```
-# reduce versiyonu ödev
+# reduce versiyonu
 ```javascript
 
 let sepet = [10, 20, 30];
