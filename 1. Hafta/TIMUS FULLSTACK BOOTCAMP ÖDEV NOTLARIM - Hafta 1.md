@@ -7,30 +7,31 @@ JavaScript, [Brendan Eich](https://www.google.com/search?sca_esv=575755605&q=Bre
 
 JavaScript'in tarihi, 1990 ların sonlarına dayanır ve o zamandan bu yana büyük bir gelişme göstermiştir. İşte JavaScript'in tarihi ve önemli kilometre taşları:
 
-   1995: İlk JavaScript Sürümü - Netscape Communications, web tarayıcıları için JavaScript'i geliştirmeye başladı ve ilk sürümü Navigator 2.0'da tanıttı.
+   **1995: İlk JavaScript Sürümü -**  Netscape Communications, web tarayıcıları için JavaScript'i geliştirmeye başladı ve ilk sürümü Navigator 2.0'da tanıttı.
 
-   1996: JavaScript Standartlaştırması - JavaScript, ECMAScript adı altında bir standart haline geldi. ECMAScript, dilin tanımını ve özelliklerini belirler.
+   **1996: JavaScript Standartlaştırması -**  JavaScript, ECMAScript adı altında bir standart haline geldi. ECMAScript, dilin tanımını ve özelliklerini belirler.
 
-   2000: ECMAScript 3.0 - ECMAScript 3, JavaScript'in yaygın olarak kullanılan bir versiyonu haline geldi ve tarayıcılar bu sürümü desteklemeye başladı.
+   **2000: ECMAScript 3.0 -**  ECMAScript 3, JavaScript'in yaygın olarak kullanılan bir versiyonu haline geldi ve tarayıcılar bu sürümü desteklemeye başladı.
 
-   2005: AJAX'ın Yükselişi - Asenkron JavaScript ve XML (AJAX), web uygulamalarının daha dinamik ve etkileşimli hale gelmesini sağlayan bir teknoloji olarak popüler hale geldi.
+   **2005: AJAX'ın Yükselişi -** Asenkron JavaScript ve XML (AJAX), web uygulamalarının daha dinamik ve etkileşimli hale gelmesini sağlayan bir teknoloji olarak popüler hale geldi.
 
-   2009: ECMAScript 5.1 - Bu sürümle birlikte JavaScript diline birçok yeni özellik eklendi ve eksiklikler giderildi.
+   **2009: ECMAScript 5.1 -**  Bu sürümle birlikte JavaScript diline birçok yeni özellik eklendi ve eksiklikler giderildi.
 
-   2015: ECMAScript 6 (ES6) / ECMAScript 2015 - Bu büyük güncellemeyle birçok yeni dil özelliği ve sözdizimi güncellemeleri tanıtıldı. Bu sürüm, daha önceki sürümlere göre çok daha modern ve gelişmiş bir JavaScript dilini standartlaştırıldı.
+   **2015: ECMAScript 6 (ES6) / ECMAScript 2015 -**  Bu büyük güncellemeyle birçok yeni dil özelliği ve sözdizimi güncellemeleri tanıtıldı. Bu sürüm, daha önceki sürümlere göre çok daha modern ve gelişmiş bir JavaScript dilini standartlaştırıldı.
 
-   2016 ve Sonrası: Yıllık Güncellemeler - ECMAScript artık yıllık güncellemelerle geliyor. Her yıl yeni özellikler ekleniyor ve dil sürekli olarak gelişiyor.
+   **2016 ve Sonrası: Yıllık Güncellemeler -**  ECMAScript artık yıllık güncellemelerle geliyor. Her yıl yeni özellikler ekleniyor ve dil sürekli olarak gelişiyor.
 
-   2017: Async/Await - ECMAScript 2017 ile async/await sözdizimi tanıtıldı, bu da asenkron işlemlerin yönetimini kolaylaştırdı.
+   **2017: Async/Await -** ECMAScript 2017 ile async/await sözdizimi tanıtıldı, bu da asenkron işlemlerin yönetimini kolaylaştırdı.
 
-   2019: ECMAScript 2019 - Bu sürümle birlikte Array.flat(), Array.flatMap() gibi yeni yöntemler ve özellikler eklendi.
+   **2019: ECMAScript 2019 -** Bu sürümle birlikte Array.flat(), Array.flatMap() gibi yeni yöntemler ve özellikler eklendi.
 
-   2020 ve Sonrası: Güncellemeler Devam Ediyor - ECMAScript, her yıl yeni özelliklerle güncellenmeye devam ediyor. Modülerlik, performans ve güvenlik iyileştirmeleri de bu güncellemelerin bir parçası olmuştur.
+   **2020 ve Sonrası: Güncellemeler Devam Ediyor -** ECMAScript, her yıl yeni özelliklerle güncellenmeye devam ediyor. Modülerlik, performans ve güvenlik iyileştirmeleri de bu güncellemelerin bir parçası olmuştur.
 
-   2021: ECMAScript 2021 - Bu sürümle birlikte yeni özellikler eklenmiştir, özellikle String.prototype.replaceAll() ve Promise.any() gibi.
+   **2021: ECMAScript 2021 -** Bu sürümle birlikte yeni özellikler eklenmiştir, özellikle String.prototype.replaceAll() ve Promise.any() gibi.
 
 JavaScript'in gelişimi sadece dilin kendisi ile sınırlı değildir; tarayıcılar, sunucu tarafı uygulamalar ve çeşitli çerçeveler (frameworks) ve kütüphaneler de JavaScript ekosistemini büyük ölçüde etkileyerek daha güçlü ve kullanıcı dostu uygulamaların geliştirilmesine olanak tanımıştır. Bu nedenle, JavaScript'in evrimi sürekli devam etmektedir.
 
+#
 ## Javascript Veri Türleri ##
 
 JavaScript'te veriler iki temel kategoriye ayrılabilir: primitive (ilkel) veriler ve complex (karmaşık) veriler.
@@ -55,10 +56,9 @@ JavaScript'te veriler iki temel kategoriye ayrılabilir: primitive (ilkel) veril
 İlkel veriler, değerlerini doğrudan kopyalar ve kendi bellek yönetimine sahiptir. Yani, bir ilkel verinin kopyalanması sadece değeri kopyalar ve orijinal veriyi etkilemez. Öte yandan, karmaşık veriler referans tipleri olduğundan, bir değişkenin başka bir değişkene atanması sadece referansı kopyalar, bu nedenle orijinal veri üzerinde değişiklik yapılırsa diğer değişkenler de etkilenir.
 
 #
-#
 ## Değişken Tanımlama Anahtar Kelimeleri ##
 
-var, let, ve const JavaScript dilinde kullanılan üç farklı değişken tanımlama anahtar kelimeleridir ve her biri farklı özelliklere sahiptir. İşte bu üç değişken tanımlama anahtar kelimesinin farkları:
+`var`, `let`, ve `const` JavaScript dilinde kullanılan üç farklı değişken tanımlama anahtar kelimeleridir ve her biri farklı özelliklere sahiptir. İşte bu üç değişken tanımlama anahtar kelimesinin farkları:
 
 **var:**
 
@@ -78,7 +78,7 @@ var, let, ve const JavaScript dilinde kullanılan üç farklı değişken tanım
 
    `let` ile tanımlanan değişkenler de hoisted olur, ancak başlangıç değerleri undefined yerine başka bir değer alır.
 
-   Aynı isimde bir değişken birden fazla kez aynı kapsamda tanımlanamaz.
+   `let` ile aynı isimde bir değişken birden fazla kez aynı kapsamda tanımlanamaz.
 
 **const:**
 
@@ -86,7 +86,7 @@ var, let, ve const JavaScript dilinde kullanılan üç farklı değişken tanım
 
    `const` ile tanımlanan değişkenler, let gibi blok kapsamına sahiptir.
 
-   `Ancak`, const ile tanımlanan değişkenlerin değeri bir kez atanır ve daha sonra değiştirilemez (immutable). Yani, bir kez bir değer atandığında, bu değer değiştirilemez.
+   Ancak, `const` ile tanımlanan değişkenlerin değeri bir kez atanır ve daha sonra değiştirilemez (immutable). Yani, bir kez bir değer atandığında, bu değer değiştirilemez.
 
    `const` ile aynı isimde bir değişken birden fazla kez aynı kapsamda tanımlanamaz.
 
@@ -356,7 +356,6 @@ console.table(arr)
 //└─────────┴─────────┴────────────┘
 ```
 ##
-##
 ## do..while ##
 
 **JavaScript’te do...while döngüsü, döngü işlemlerinin önce bir kez gerçekleştirilmesini sağlar ve ardından belirli bir koşulu kontrol eder. Eğer koşul doğruysa, işlem tekrarlanır. Bu, döngünün en az bir kez çalışmasını garanti eder, çünkü koşul kontrolü döngünün sonunda yapılır. do...while döngüsünün temel sözdizimi şu şekildedir:**
@@ -385,7 +384,6 @@ do {
 
 **do...while döngüsü, özellikle bir işlemi en az bir kez gerçekleştirmeniz gerektiğinde veya döngünün sonunda bir koşulu kontrol etmeniz gerektiğinde kullanışlıdır. Ancak diğer döngü türleri olan for ve while gibi, bu döngü de sonsuz döngülere neden olabilir, bu nedenle koşulu dikkatli bir şekilde kontrol etmek önemlidir.**
 
-##
 ##
 ## for - foreach Arasındaki Fark ##
 
@@ -418,7 +416,6 @@ for ve forEach, JavaScript'te döngü işlemlerini gerçekleştirmek için kulla
 
 Hangi döngü yönteminin kullanılacağı, özellikle işlevin gereksinimlerine ve kodun okunabilirliğine bağlıdır. Genel olarak, bir dizinin her öğesini dolaşmak ve her öğe üzerinde aynı işlemi yapmak istediğinizde forEach kullanmak daha uygun olabilir. Ancak belirli bir koşul altında tekrar sayısını belirlemek ve endekse erişim gerekiyorsa, geleneksel for döngüsü daha uygun olabilir.
 
-##
 ##
 ## reduce() Kullanımı
 
