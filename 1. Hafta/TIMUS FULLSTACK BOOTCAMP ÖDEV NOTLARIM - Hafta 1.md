@@ -1,6 +1,4 @@
-﻿## TIMUS FULLSTACK BOOTCAMP ÖDEV NOTLARIM - Hafta 1 ##
-
-#
+﻿# TIMUS FULLSTACK BOOTCAMP ÖDEV NOTLARIM - Hafta 1
 ## Javascript nedir? Javascript'in Tarihsel Gelişimi
 
 JavaScript, [Brendan Eich](https://www.google.com/search?sca_esv=575755605&q=Brendan+Eich&si=ALGXSlYh1-GEPndq7qMo--O-TPixQtNN4JMroSxgItz5kq0stOtk3MR2PK1MW62c_g68umDUwPYvdjOu-VvCYdLZJnFkjEjhy4bfTWACvLEAemSbmrJuid5V53UdEX9AvBbdn-mpOeMNg8oEwFy8Nr889gJMfpqOylZiuUJHPb2eisHJawQ7A1k-vI2ESyFsFBMoAfLdm3bZ&sa=X&ved=2ahUKEwiFr4vLhYyCAxVHX_EDHTpiAjgQmxMoAXoECEsQAw) tarafından tasarlanan,  HTML ve CSS ile birlikte World Wide Web'in temel teknolojilerinden biri olan programlama dilidir. Web sitelerinin %97'sinden fazlası, web sayfası hareketleri için istemci tarafında JavaScript kullanırlar ve kullanılan kodlar genellikle üçüncü taraf kitaplıkları içerir.
@@ -31,7 +29,6 @@ JavaScript'in tarihi, 1990 ların sonlarına dayanır ve o zamandan bu yana büy
 
 JavaScript'in gelişimi sadece dilin kendisi ile sınırlı değildir; tarayıcılar, sunucu tarafı uygulamalar ve çeşitli çerçeveler (frameworks) ve kütüphaneler de JavaScript ekosistemini büyük ölçüde etkileyerek daha güçlü ve kullanıcı dostu uygulamaların geliştirilmesine olanak tanımıştır. Bu nedenle, JavaScript'in evrimi sürekli devam etmektedir.
 
-#
 ## Javascript Veri Türleri
 
 JavaScript'te veriler iki temel kategoriye ayrılabilir: primitive (ilkel) veriler ve complex (karmaşık) veriler.
@@ -55,7 +52,6 @@ JavaScript'te veriler iki temel kategoriye ayrılabilir: primitive (ilkel) veril
 
 İlkel veriler, değerlerini doğrudan kopyalar ve kendi bellek yönetimine sahiptir. Yani, bir ilkel verinin kopyalanması sadece değeri kopyalar ve orijinal veriyi etkilemez. Öte yandan, karmaşık veriler referans tipleri olduğundan, bir değişkenin başka bir değişkene atanması sadece referansı kopyalar, bu nedenle orijinal veri üzerinde değişiklik yapılırsa diğer değişkenler de etkilenir.
 
-#
 ## Değişken Tanımlama Anahtar Kelimeleri
 
 `var`, `let`, ve `const` JavaScript dilinde kullanılan üç farklı değişken tanımlama anahtar kelimeleridir ve her biri farklı özelliklere sahiptir. İşte bu üç değişken tanımlama anahtar kelimesinin farkları:
@@ -92,7 +88,6 @@ JavaScript'te veriler iki temel kategoriye ayrılabilir: primitive (ilkel) veril
 
 Hangi değişken tanımlama anahtar kelimesini kullanmanız gerektiği, değişkeninin ömrü ve kullanım gereksinimleri size bağlıdır. Genel bir kural olarak, const kullanmayı tercih etmelisiniz, çünkü bu, değerlerin yanlışlıkla değiştirilmesini önler ve kodunuzu daha güvenli hale getirir. Ancak, bir değişkenin değerinin ilerleyen zamanlarda değişmesi gerekiyorsa veya değişkenin kapsamı sınırlıysa, let veya var kullanabilirsiniz.
 
-##
 ## <a name="_w3i0nnoug06x"></a><a name="_uc5aw7hfda52"></a>**DİZİ(ARRAY) METODLARI**
 ## <a name="_7w803qdhc29g"></a>**Bölüm 1. Dizi özellikleri**
 - [length](https://www.javascripttutorial.net/javascript-array-length/) – bir dizinin uzunluk özelliğini etkili bir şekilde nasıl kullanacağınızı gösterir.
@@ -384,7 +379,6 @@ do {
 
 **do...while döngüsü, özellikle bir işlemi en az bir kez gerçekleştirmeniz gerektiğinde veya döngünün sonunda bir koşulu kontrol etmeniz gerektiğinde kullanışlıdır. Ancak diğer döngü türleri olan for ve while gibi, bu döngü de sonsuz döngülere neden olabilir, bu nedenle koşulu dikkatli bir şekilde kontrol etmek önemlidir.**
 
-##
 ## for - foreach Arasındaki Fark ##
 
 for ve forEach, JavaScript'te döngü işlemlerini gerçekleştirmek için kullanılan iki farklı yöntemdir ve aralarında bazı önemli farklar vardır. İşte bu iki döngü yöntemi arasındaki temel farklar:
@@ -435,7 +429,7 @@ else {
 console.log(toplam)
 }
 ```
-# reduce versiyonu
+### reduce versiyonu
 ```javascript
 
 let sepet = [10, 20, 30];
