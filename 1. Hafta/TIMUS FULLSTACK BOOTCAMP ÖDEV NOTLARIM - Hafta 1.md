@@ -161,9 +161,10 @@ console.log(arr)
 ```javascript
 let arr = [1, 2, 3]
 console.log(arr.slice(1, 3))
+// Output: 3
 ```
 
-// Output: 3
+
 ## <a name="_aj144yg8yyxs"></a>**Bölüm 3. Elemanların bulunması**
 - [indexOf()](https://www-javascripttutorial-net.translate.goog/javascript-array-indexof/?_x_tr_sl=auto&_x_tr_tl=tr&_x_tr_hl=tr) – dizideki bir öğeyi bulur.
 
@@ -285,9 +286,10 @@ console.log(arr)
 
 ```javascript
 function multiplicationBy3() {
-   return Array.from(arguments, x => x \* 3)
+   return Array.from(arguments, x => x * 3)
 }
 console.log(multiplicationBy3(7, 3, 1, 9))
+// Output: [ 21, 9, 3, 27 ]
 ```
 
 ## <a name="_jvu8jpvfldtv"></a>**Bölüm 7. Flattening arrays**
@@ -303,7 +305,7 @@ console.log(arr.flat())
 
 ```javascript
 let arr = [1, 4, 2, 5]
-arr = arr.flatMap((elm) => elm % 2 == 0 ? [elm \* 2, elm \* 3] : elm)
+arr = arr.flatMap((elm) => elm % 2 == 0 ? [elm * 2, elm * 3] : elm)
 console.log(arr)
 // Output: [ 1, 8, 12, 4, 6, 5 ]
 ```
@@ -364,17 +366,15 @@ console.table(arr)
 //└─────────┴─────────┴────────────┘
 ```
 
-**do..while**
+## do..while
 
 **JavaScript’te do...while döngüsü, döngü işlemlerinin önce bir kez gerçekleştirilmesini sağlar ve ardından belirli bir koşulu kontrol eder. Eğer koşul doğruysa, işlem tekrarlanır. Bu, döngünün en az bir kez çalışmasını garanti eder, çünkü koşul kontrolü döngünün sonunda yapılır. do...while döngüsünün temel sözdizimi şu şekildedir:**
 
-**javascript**
-
-**do {**
-
-`  `**// Döngü işlemleri**
-
-**} while (koşul);**
+```javascript
+do {
+   // Döngü işlemleri
+} while (koşul);
+```
 
 - **İlk olarak, işlem yapılacak kod bloğu do anahtar kelimesi ile başlar.**
 - **Ardından, işlem koşulu bir while ifadesi ile tanımlanır.**
@@ -382,47 +382,36 @@ console.table(arr)
 
 **İşte bir örnek:**
 
-**javascript**
-
-**let sayac = 0;**
-
-**do {**
-
-`  `**console.log("Sayac: " + sayac);**
-
-`  `**sayac++;**
-
-**} while (sayac < 5);**
+```javascript
+let sayac = 0;
+do {
+  console.log("Sayac: " + sayac);
+  sayac++;
+} while (sayac < 5);
+```
 
 **Bu örnek, "Sayac: 0" dan başlayarak "Sayac: 4" e kadar sayacı artırarak çalışır. Daha sonra sayac 5 olduğunda koşul kontrolü false olduğu için döngü sona erer.**
 
 **do...while döngüsü, özellikle bir işlemi en az bir kez gerçekleştirmeniz gerektiğinde veya döngünün sonunda bir koşulu kontrol etmeniz gerektiğinde kullanışlıdır. Ancak diğer döngü türleri olan for ve while gibi, bu döngü de sonsuz döngülere neden olabilir, bu nedenle koşulu dikkatli bir şekilde kontrol etmek önemlidir.**
 
-
-
-
-**for - foreach Arasındaki Fark**
+## for - foreach Arasındaki Fark
 
 for ve forEach, JavaScript'te döngü işlemlerini gerçekleştirmek için kullanılan iki farklı yöntemdir ve aralarında bazı önemli farklar vardır. İşte bu iki döngü yöntemi arasındaki temel farklar:
 
 1. **Sözdizimi ve Kullanım:**
    1. **for:** Klasik bir döngüdür ve genellikle sayacı artırarak belirli bir sayıda tekrar yapmak için kullanılır. Genellikle şu şekilde kullanılır:
-      javascript
+      ```javascript
+      for (let i = 0; i < array.length; i++) {
 
-for (let i = 0; i < array.length; i++) {
-
-`  `// Döngü işlemleri
-
-}
-
-1. **forEach:** Bu, özel bir dizi yöntemidir ve bir dizi üzerinde dolaşmak için kullanılır. İşte bir örnek:
-   javascript
-
-array.forEach(function (element) {
-
-`  `// Döngü işlemleri
-
-});
+         // Döngü işlemleri
+      }
+      ```
+   1. **forEach:** Bu, özel bir dizi yöntemidir ve bir dizi üzerinde dolaşmak için kullanılır. İşte bir örnek:
+      ```javascript
+      array.forEach(function (element) {
+         // Döngü işlemleri
+      });
+      ```
 
 1. **Gerçekleştirdiği Görev:**
    1. **for:** Klasik for döngüsü, belirli bir koşul doğru olduğu sürece döngüyü çalıştırır. Genellikle dizilerin veya nesnelerin elemanlarını tek tek işlemek için kullanılır. Veriyi endeks (index) üzerinden işlemek mümkündür.
@@ -436,6 +425,7 @@ array.forEach(function (element) {
 
 Hangi döngü yönteminin kullanılacağı, özellikle işlevin gereksinimlerine ve kodun okunabilirliğine bağlıdır. Genel olarak, bir dizinin her öğesini dolaşmak ve her öğe üzerinde aynı işlemi yapmak istediğinizde forEach kullanmak daha uygun olabilir. Ancak belirli bir koşul altında tekrar sayısını belirlemek ve endekse erişim gerekiyorsa, geleneksel for döngüsü daha uygun olabilir.
 
+```javascript
 let sepet = [];
 
 if(sepet.length === 0) console.log('Ürün yok')
@@ -443,22 +433,16 @@ if(sepet.length === 0) console.log('Ürün yok')
 else if (sepet.length === 1) console.log('Satın aldın')
 
 else {
+   let toplam = 0
+   sepet.forEach((eleman)=>{
+   toplam = toplam + eleman
+})
 
-`	`let toplam = 0
-
-
-
-`	`sepet.forEach((eleman)=>{
-
-`    	`toplam = toplam + eleman
-
-`	`})
-
-`	`console.log(toplam)
-
+console.log(toplam)
 }
-
-// reduce versiyonu ödev
+```
+# reduce versiyonu ödev
+```javascript
 
 let sepet = [10, 20, 30];
 
@@ -467,14 +451,13 @@ if(sepet.length === 0) console.log('Ürün yok')
 else if (sepet.length === 1) console.log('Satın aldın')
 
 else {
+   const toplam = sepet.reduce((akumulator, mevcutEleman)=>{
+   return akumulator + mevcutEleman
+})
 
-`    `const toplam = sepet.reduce((akumulator, mevcutEleman)=>{
-
-`        `return akumulator + mevcutEleman
-
-`    `})
-
-`    `console.log(toplam)
-
+console.log(toplam)
 }
+```
+
+
 
