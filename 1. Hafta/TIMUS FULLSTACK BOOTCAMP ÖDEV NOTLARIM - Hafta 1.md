@@ -259,8 +259,6 @@ console.log(toplam / arr.length)
 // Output: 3.6
 ```
 
-##
-##
 ## <a name="_h2j56tc7di19"></a><a name="_34ayrrtnrl3o"></a><a name="_vuts4thwjttz"></a>**Bölüm 5. Dizileri Değiştirmek**
 - [concat()](https://www.javascripttutorial.net/javascript-array-concat/) – iki diziyi bir dizide birleştirir.
 
@@ -270,7 +268,6 @@ let arr2 = [13, 4, 8, 6, 9]
 console.log(arr1.concat(arr2))
 // Output: [ 3, 7, 5, 1, 2, 13, 4, 8, 6, 9 ]
 ```
-
 
 ## <a name="_q3zukj2jc66d"></a>**Bölüm 6. Dizi Oluşturma**
 - [of()](https://www-javascripttutorial-net.translate.goog/es6/array-of/?_x_tr_sl=auto&_x_tr_tl=tr&_x_tr_hl=tr) – dizi oluşturmayı iyileştirir.
@@ -364,7 +361,8 @@ console.table(arr)
 //│    2    │ 'Aysu'  │ 'Frontend' │
 //└─────────┴─────────┴────────────┘
 ```
-
+##
+##
 ## do..while ##
 
 **JavaScript’te do...while döngüsü, döngü işlemlerinin önce bir kez gerçekleştirilmesini sağlar ve ardından belirli bir koşulu kontrol eder. Eğer koşul doğruysa, işlem tekrarlanır. Bu, döngünün en az bir kez çalışmasını garanti eder, çünkü koşul kontrolü döngünün sonunda yapılır. do...while döngüsünün temel sözdizimi şu şekildedir:**
@@ -393,6 +391,8 @@ do {
 
 **do...while döngüsü, özellikle bir işlemi en az bir kez gerçekleştirmeniz gerektiğinde veya döngünün sonunda bir koşulu kontrol etmeniz gerektiğinde kullanışlıdır. Ancak diğer döngü türleri olan for ve while gibi, bu döngü de sonsuz döngülere neden olabilir, bu nedenle koşulu dikkatli bir şekilde kontrol etmek önemlidir.**
 
+##
+##
 ## for - foreach Arasındaki Fark ##
 
 for ve forEach, JavaScript'te döngü işlemlerini gerçekleştirmek için kullanılan iki farklı yöntemdir ve aralarında bazı önemli farklar vardır. İşte bu iki döngü yöntemi arasındaki temel farklar:
@@ -424,6 +424,8 @@ for ve forEach, JavaScript'te döngü işlemlerini gerçekleştirmek için kulla
 
 Hangi döngü yönteminin kullanılacağı, özellikle işlevin gereksinimlerine ve kodun okunabilirliğine bağlıdır. Genel olarak, bir dizinin her öğesini dolaşmak ve her öğe üzerinde aynı işlemi yapmak istediğinizde forEach kullanmak daha uygun olabilir. Ancak belirli bir koşul altında tekrar sayısını belirlemek ve endekse erişim gerekiyorsa, geleneksel for döngüsü daha uygun olabilir.
 
+##
+##
 ## reduce() Kullanımı
 
 ```javascript
