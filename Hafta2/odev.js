@@ -125,25 +125,7 @@ var dolap = ["Shirt", "Pant", "TShirt"];
 
 */
 
-//? 8
-
-/*
-`slice()` ve `splice()` dizilerle çalışırken sıkça kullanılan iki farklı diziyi manipüle etme yöntemidir ve önemli farklar içerir:
-
-1. `slice()` Yöntemi:
-   - `slice()` yöntemi, bir dizinin belirli bir kısmını kopyalar ve bu kopyayı yeni bir dizi olarak döndürür.
-   - Orijinal diziyi değiştirmez, sadece kopyalar.
-   - `slice()` yöntemi, başlangıç ve bitiş indisleri arasındaki elemanları alır ve bu elemanları yeni bir dizi olarak döndürür. Başlangıç ve bitiş indisleri varsayılan olarak sırasıyla 0 ve dizinin uzunluğu olarak kabul edilir.
-   - Örneğin: `dizi.slice(1, 4)` ifadesi, dizinin 1. indisinden 3. indise kadar olan elemanları kopyalar ve yeni bir dizi olarak döndürür.
-
-2. `splice()` Yöntemi:
-   - `splice()` yöntemi, bir diziyi değiştirir ve diziden elemanları kaldırabilir, ekleyebilir veya değiştirebilir.
-   - Orijinal diziyi değiştirir, kopya oluşturmaz.
-   - `splice()` yöntemi, başlangıç indisini, kaç elemanın silineceğini ve gerekirse yeni elemanları kabul eden bir dizi içerir. Bu yöntem, başlangıç indisi ile başlar, belirtilen sayıdaki elemanı kaldırır ve istenilen yeni elemanları ekler.
-   - Örneğin: `dizi.splice(1, 2, "Yeni1", "Yeni2")` ifadesi, dizinin 1. indisinden başlayarak 2 elemanı kaldırır ve yerine "Yeni1" ve "Yeni2" elemanlarını ekler.
-
-Özetle, `slice()` yöntemi sadece kopyalar ve orijinal diziyi değiştirmezken, `splice()` yöntemi diziyi değiştirir ve elemanları kaldırabilir veya ekleyebilir. Bu iki yöntemi kullanırken dikkatli olmalısınız, çünkü dizinin orijinal durumunu değiştirebilirsiniz.
-*/
+//? 8. sorunun cevabı odev.md dosyasındadır.
 
 const arr = [1, 2, 3, 4, 5, 6, 7, 7, 8, 6, 10];
 /*
@@ -207,16 +189,7 @@ promise
   
   */
 
-/*
-? Bu kodun çıktısı nedir neden
-
-
-
-  * 1: Promise job(true) yani resolve olmuş bir fonksiyona eşitlenmiş ve data bilgisi success olduğundan success dönüyor
-  * 2: Ardından bu data bilgisini victory ile !== kıyası yapılıyor koşul sağlandığı için "Defeat" diye bir hata mesajı fırlatılıyor
-  * 3: Fırlatılan hata mesajı catch bloğunu tetikler ve fonksiyon parametresindeki error mesajını ekrana bastırır ve "Error Caught" döner
-  * 
-  */
+//? Bu kodun çıktısı nedir neden
 
 function job(state) {
   return new Promise(function (resolve, reject) {
@@ -264,3 +237,16 @@ promise
   .catch(function (data) {
     console.log("Error:", data.message);
   });
+
+/*
+ * 0: job(true) ile başlayarak bir promise oluşturulur ve başarı durumunda "success", aksi halde "error" ile sonuçlanır.
+ * 1: promise değişkeni job(true) yani resolve olmuş bir fonksiyona eşitlenmiş ve .then() bloğunun içindeki data bilgisi success olduğundan success dönüyor
+ * 2: Ardından bir önceki .then() bloğu içerisinde return edilen job(true) fonksiyonu success, bu data bilgisini victory ile !== kıyası yapılıyor, koşul sağlandığı için "Defeat" diye bir hata mesajı fırlatılıyor
+ * 3: Fırlatılan hata mesajı 1. .catch() bloğunu tetikler.
+ * 4: 1. .catch() bloğu içerisindeki fonksiyonun aldığı error parametresi boş değerdir ve bloğun içerisindeki return edilen job(false) fonksiyonu reject olur.
+ * 5: reject olan ifade 2. .catch() bloğunu tetikler.
+ * 6: 2. .catch() bloğunda fonksiyonun error parametresi "error" olduğu için console başta error yazdırır sonra "Error caught" yazısını döner
+ * 7: sonrasındaki .then() bloğu içerisine data bilgisi almaz ve bir şey dönmez fakat return edilen yeni bir Error nesnesi "test" mesajı tutar
+ * 8: Bu dönen Error nesnesi 3. yani sonuncu .catch() bloğunu tetikler.
+ * 9: Fonksiyondaki data da tutulan bir önceki dönen Error nesnesinin "test" mesajı olduğundan "Error: test" diye yazdırır ve program sonlanır.
+ */

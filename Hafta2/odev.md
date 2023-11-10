@@ -1,6 +1,6 @@
-# Ödev1
+# Ödev2
 
-1. JavaScript nedir ve tarihsel gelişiminden bahsedin
+## 1. JavaScript nedir ve tarihsel gelişiminden bahsedin
 
 JavaScript, [Brendan Eich](https://www.google.com/search?sca_esv=575755605&q=Brendan+Eich&si=ALGXSlYh1-GEPndq7qMo--O-TPixQtNN4JMroSxgItz5kq0stOtk3MR2PK1MW62c_g68umDUwPYvdjOu-VvCYdLZJnFkjEjhy4bfTWACvLEAemSbmrJuid5V53UdEX9AvBbdn-mpOeMNg8oEwFy8Nr889gJMfpqOylZiuUJHPb2eisHJawQ7A1k-vI2ESyFsFBMoAfLdm3bZ&sa=X&ved=2ahUKEwiFr4vLhYyCAxVHX_EDHTpiAjgQmxMoAXoECEsQAw) tarafından tasarlanan, HTML ve CSS ile birlikte World Wide Web'in temel teknolojilerinden biri olan programlama dilidir. Web sitelerinin %97'sinden fazlası, web sayfası hareketleri için istemci tarafında JavaScript kullanırlar ve kullanılan kodlar genellikle üçüncü taraf kitaplıkları içerir.
 
@@ -30,7 +30,7 @@ JavaScript'in tarihi, 1990 ların sonlarına dayanır ve o zamandan bu yana büy
 
 JavaScript'in gelişimi sadece dilin kendisi ile sınırlı değildir; tarayıcılar, sunucu tarafı uygulamalar ve çeşitli çerçeveler (frameworks) ve kütüphaneler de JavaScript ekosistemini büyük ölçüde etkileyerek daha güçlü ve kullanıcı dostu uygulamaların geliştirilmesine olanak tanımıştır. Bu nedenle, JavaScript'in evrimi sürekli devam etmektedir.
 
-2. Java ile javascript arasındaki fark nedir
+## 2. Java ile javascript arasındaki fark nedir
 
 Java ve JavaScript, isim benzerliği dışında birbirinden oldukça farklı iki programlama dilidir. İşte Java ve JavaScript arasındaki temel farklar:
 
@@ -60,6 +60,8 @@ Java ve JavaScript, isim benzerliği dışında birbirinden oldukça farklı iki
 
 Java ve JavaScript arasındaki farklar, kullanıldıkları alanlar ve kullanım amaçları göz önüne alındığında oldukça belirgindir. Java daha geniş bir uygulama yelpazesi sunarken, JavaScript özellikle web geliştirmeye odaklanır.
 
+## 3. Javascript teki veri tipleri nelerdir açıklayınız
+
 1. **Primitive (İlkel) Veriler:**
 
    1. Primitive veriler, basit ve tek bir değeri temsil eder. Bunlar JavaScript'in temel veri tipleridir. İşte bazı örnekler:
@@ -80,7 +82,7 @@ Java ve JavaScript arasındaki farklar, kullanıldıkları alanlar ve kullanım 
 
 İlkel veriler, değerlerini doğrudan kopyalar ve kendi bellek yönetimine sahiptir. Yani, bir ilkel verinin kopyalanması sadece değeri kopyalar ve orijinal veriyi etkilemez. Öte yandan, karmaşık veriler referans tipleri olduğundan, bir değişkenin başka bir değişkene atanması sadece referansı kopyalar, bu nedenle orijinal veri üzerinde değişiklik yapılırsa diğer değişkenler de etkilenir.
 
-4. null ile undefined arasıdaki fark nedir açıklayınız
+## 4. null ile undefined arasıdaki fark nedir açıklayınız
 
 `null` ve `undefined`, JavaScript dilinde değerlerin tanımlı olmama durumlarını temsil eden iki özeldir. Her ikisi de farklı kullanım senaryolarına sahiptir.
 
@@ -109,7 +111,7 @@ Genellikle, bir değişkenin başlangıç değeri atanmadığında veya bir nesn
 - JavaScript, değişkenlerin başlangıçta `undefined` olarak atanmasını sağlar.
 - `null` ve `undefined` sık sık koşullu ifadelerde veya veri işleme işlemlerinde kullanılır.
 
-5. NaN nedir açıklayınız
+## 5. NaN nedir açıklayınız
 
 `NaN`, JavaScript dilinde "Not-a-Number"ın kısaltmasıdır ve bu değer, sayısal işlemlerde geçerli bir sonucun elde edilemediği veya sayısal olmayan bir değerle matematiksel işlem yapıldığında kullanılır. JavaScript'te `NaN`, bir özel sayısal değerdir ve sayı olmayan bir işlemin sonucunu temsil eder.
 
@@ -146,7 +148,7 @@ if (isNaN(deger)) {
 
 Bu şekilde, bir değerin `NaN` olup olmadığını kontrol edebilir ve uygun işlemleri gerçekleştirebilirsiniz.
 
-6. Javascript’te yorum satırı eklemenin kaç farklı yolu vardır
+## 6. Javascript’te yorum satırı eklemenin kaç farklı yolu vardır
 
 JavaScript'de yorum satırı eklemenin birden fazla yolu vardır. Bu yorumlar, kodunuzu daha açıklanabilir hale getirmek, notlar eklemek veya geçici olarak kod bloklarını devre dışı bırakmak için kullanılır. İşte JavaScript'te yorum satırı eklemenin farklı yolları:
 
@@ -187,7 +189,7 @@ JavaScript'de yorum satırı eklemenin birden fazla yolu vardır. Bu yorumlar, k
 
 Yorumlar, kodunuzu anlaşılır ve bakımı kolay hale getirmek için önemlidir, bu nedenle kodunuzun herhangi bir kısmını açıklamak için yorumlar eklemek iyi bir uygulamadır.
 
-7. Global değişken ne demektir açıklayınız
+## 7. Global değişken ne demektir açıklayınız
 
 Global değişken, bir programın veya bir kod bloğunun herhangi bir yerinde tanımlanmış ve erişilebilir olan bir değişkendir. Global değişkenler, programın başından itibaren tanımlandıkları andan itibaren programın sonuna kadar kullanılabilirler ve herhangi bir fonksiyon içinde veya kod bloğunda erişilebilirler.
 
@@ -216,7 +218,7 @@ fonksiyon1(); // "Global değişkenin değeri değiştirildi" çıktısı
 
 Yukarıdaki örnekte `globalDegisken`, fonksiyonlar arasında erişilebilir ve değiştirilebilir. Ancak global değişkenlerin yaygın bir şekilde kullanılması yerine, programcılar genellikle yerel değişkenler (sadece belirli bir kod bloğu içinde erişilebilen değişkenler) tercih ederler. Bu, kodun daha modüler ve güvenli olmasına yardımcı olabilir. Global değişkenler, programın gereksinimlerine ve tasarımına bağlı olarak uygun şekilde kullanılmalıdır.
 
-8. Javascript’te this anahtar kelimesi nedir açıklayınız
+## 8. Javascript’te this anahtar kelimesi nedir açıklayınız
 
 JavaScript'de `this`, bir işlevin içinde bulunduğu nesneyi veya bir işlevin çağrıldığı bağlamı temsil eden özel bir anahtar kelimedir. `this` kullanarak işlevin hangi nesne veya bağlam içinde çalıştığını anlamak ve bu bağlama erişmek mümkün olur. `this` kavramı, JavaScript'de nesne yönelimli programlamanın önemli bir parçasıdır.
 
@@ -261,7 +263,7 @@ JavaScript'de `this`, bir işlevin içinde bulunduğu nesneyi veya bir işlevin 
 
 `this` kullanımı, JavaScript'de nesne yönelimli programlama ve işlevlerin bağlamı hakkında önemli bir kavramdır. İşlevler, işlevi çağıran bağlama bağlı olarak farklı davranabilirler ve bu, nesne tabanlı programlamanın temel özelliklerinden biridir.
 
-9. == ile === farkını örnekler ile açıklayınız
+## 9. == ile === farkını örnekler ile açıklayınız
 
 JavaScript'da `==` ve `===` iki farklı karşılaştırma operatörüdür ve değerleri karşılaştırmak için kullanılırlar. Ancak bu iki operatörün davranışları farklıdır:
 
@@ -293,7 +295,7 @@ JavaScript'da `==` ve `===` iki farklı karşılaştırma operatörüdür ve de�
 
 Sonuç olarak, `==` operatörü sadece değerleri karşılaştırırken, `===` operatörü hem değerleri hem de türleri karşılaştırır. Genel olarak, programcılar tür uyumsuzluklarını önlemek ve beklenmedik davranışları engellemek için `===` operatörünü tercih ederler. Ancak bazı özel durumlarda `==` operatörü kullanılarak tür dönüşümünün istendiği durumlar vardır. Bu nedenle, kullanılacak operatörü seçerken dikkatli olmak önemlidir.
 
-10. let var const farkını tablo yapınız
+## 10. let var const farkını tablo yapınız
 
 Aşağıda, JavaScript'te `let`, `var`, ve `const` değişken tanımlama anahtar kelimelerinin farklarını tablo halinde açıklamaya çalıştım:
 
@@ -315,7 +317,7 @@ Bu tablo, `let`, `var`, ve `const`'ın bazı temel farklarını göstermektedir:
 
 Özetle, `let` ve `const` daha modern ve önerilen değişken tanımlama anahtar kelimeleridir. `let`, yeniden atanabilir değişkenler için kullanılırken, `const`, sabit (değiştirilemeyen) değişkenler için kullanılır. `var`, eski bir değişken tanımlama anahtar kelimesidir ve işlev kapsamında çalışır, bu nedenle genellikle `let` veya `const` ile değiştirilmesi tavsiye edilir.
 
-11. Arrow fonksiyonun normal fonksiyondan farkları nelerdir
+## 11. Arrow fonksiyonun normal fonksiyondan farkları nelerdir
 
 Arrow fonksiyonları (ok fonksiyonları), geleneksel fonksiyonlardan (normal fonksiyonlar) bazı önemli farklara sahiptir. İşte arrow fonksiyonlarının normal fonksiyonlardan farkları:
 
@@ -385,7 +387,7 @@ Arrow fonksiyonları (ok fonksiyonları), geleneksel fonksiyonlardan (normal fon
 
 Arrow fonksiyonları, belirli kullanım senaryoları için daha uygun olabilirken, geleneksel fonksiyonlar daha fazla esneklik sağlar ve birden fazla ifadeyi yönetebilir. Bu nedenle, kullanılacak fonksiyon türünü ihtiyaca göre seçmek önemlidir.
 
-12. swich bloğu içinde hatasız nasıl değişken tanımlanır
+## 12. swich bloğu içinde hatasız nasıl değişken tanımlanır
 
 JavaScript'te bir `switch` ifadesi içinde değişken tanımlamanın iki temel yolunu ele alalım: `case` etiketleri içinde değişken tanımlama ve `switch` ifadesinin dışında değişkeni önceden tanımlama.
 
@@ -437,7 +439,7 @@ JavaScript'te bir `switch` ifadesi içinde değişken tanımlamanın iki temel y
 
 Bu şekilde, `mesaj` değişkenini `switch` ifadesinin dışında tanımladığınız için, her `case` etiketi içinde ayrı ayrı tanımlamak zorunda kalmazsınız. Bu, kodun daha temiz ve hatasız olmasına yardımcı olabilir.
 
-13. Pure fonksiyon ne demektir açıklayınız
+## 13. Pure fonksiyon ne demektir açıklayınız
 
 Pure fonksiyon, programlama teriminin bir parçasıdır ve belirli özelliklere sahip olan bir fonksiyon türünü ifade eder. Bir fonksiyonun "pure" olabilmesi için aşağıdaki özellikleri taşıması gerekir:
 
@@ -449,7 +451,7 @@ Pure fonksiyon, programlama teriminin bir parçasıdır ve belirli özelliklere 
 
 Pure fonksiyonlar, programlamanın temel prensiplerinden birini olan "fonksiyonel programlama"nın önemli bir parçasıdır. Pure fonksiyonlar, kodun daha öngörülebilir ve test edilebilir olmasını sağlar ve hatalı kodları önlemeye yardımcı olur. Ayrıca, paralel ve dağıtık hesaplamalar gibi bazı programlama konseptlerinde de kullanışlıdır. Pure fonksiyonlar, genellikle state management ve veri işleme işlevlerinde tercih edilir.
 
-14. Rest operatör nedir örnekle açıklayınız
+## 14. Rest operatör nedir örnekle açıklayınız
 
 Rest operatörü ve spread operatörü, JavaScript'te benzer görünen ama farklı amaçlara hizmet eden iki farklı operatördür. İşte bu iki operatör arasındaki temel farklar:
 
@@ -488,7 +490,7 @@ Rest operatörü ve spread operatörü, JavaScript'te benzer görünen ama farkl
 
 Özetle, rest operatörü, dizi veya nesne elemanlarını toplamak veya almak için kullanılırken, spread operatörü elemanları ayırarak dizi veya nesneleri genişletmek veya ayrıştırmak için kullanılır. İkisi de JavaScript kodunu daha esnek ve okunabilir hale getiren önemli araçlardır, ancak kullanıldıkları bağlama bağlı olarak farklı amaçlara hizmet ederler.
 
-15. Object destructuring nedir örnekle açıklayınız
+## 15. Object destructuring nedir örnekle açıklayınız
 
 Object destructuring, JavaScript'te bir nesnenin özelliklerini veya değerlerini ayıklayarak ayrıştırma işlemidir. Bu işlem, bir nesnenin içindeki özelliklere veya değerlere kolayca erişmek için kullanılır. Aşağıda object destructuring'i örneklerle açıklayalım:
 
@@ -549,7 +551,7 @@ Bu örnekte, `kullaniciBilgisi` adlı bir işlev tanımlandı ve bu işlevin par
 
 Object destructuring, JavaScript kodunu daha temiz ve okunabilir hale getirmenin yanı sıra, nesnelerin içindeki değerlere kolayca erişmenizi sağlayan güçlü bir özelliktir.
 
-16. 2 elemanlı bir objeyi 6 farklı şekilde oluşturunuz
+## 16. 2 elemanlı bir objeyi 6 farklı şekilde oluşturunuz
 
 2 elemanlı bir JavaScript nesnesini 6 farklı şekilde oluşturabilirsiniz. İşte bu 6 farklı yaklaşım:
 
@@ -602,7 +604,8 @@ const nesne6 = { anahtar1, anahtar2 };
 
 Bu altı farklı yöntemle 2 elemanlı bir nesneyi oluşturabilirsiniz. Her yöntem, aynı sonucu verir, ancak farklı sözdizimleri ve yaklaşımları kullanır. Hangi yöntemi kullanacağınız, kodunuzun gereksinimlerine ve okunabilirliğine bağlı olarak değişebilir.
 
-17. 2 elemanlı bir objenin key ve value değerlerinin karakter sayısı ile 2 farklı döngü
+## 17. 2 elemanlı bir objenin key ve value değerlerinin karakter sayısı ile 2 farklı döngü
+
     methodu kullanarak yeni bir obje oluşturunuz
 
 2 elemanlı bir nesnenin (objenin) anahtarlarının ve değerlerinin karakter sayısına göre yeni bir nesne oluşturmak için iki farklı döngü yöntemi olan `for...in` döngüsü ve `Object.keys()` ile döngü kullanabiliriz. İşte bu iki yöntemi kullanarak yeni bir nesne oluşturan örnekler:
@@ -639,7 +642,7 @@ console.log(yeniNesne);
 
 Her iki örnek de, mevcut nesnenin anahtarlarını ve değerlerini dolaşarak her bir değerin karakter sayısını hesaplar ve yeni bir nesne oluşturur. İlk örnek `for...in` döngüsü kullanırken, ikinci örnek `Object.keys()` ile nesnenin anahtarlarını alır ve `forEach` döngüsünü kullanır. Sonuç olarak, her iki yöntem de aynı sonucu üretir.
 
-18. Cookie, local storage ve session storage farkını tablo yapınız
+## 18. Cookie, local storage ve session storage farkını tablo yapınız
 
 İşte Cookie, Local Storage ve Session Storage arasındaki temel farkları içeren bir tablo:
 
@@ -658,7 +661,7 @@ Her iki örnek de, mevcut nesnenin anahtarlarını ve değerlerini dolaşarak he
 
 Bu tablo, Cookie, Local Storage ve Session Storage arasındaki önemli farkları özetlemektedir. Cookie, kullanıcı tarayıcıları aracılığıyla sunuculara gönderilebilir ve belirli bir süre boyunca saklanabilir. Local Storage ve Session Storage, tarayıcı tarafında veri saklamak için kullanılır, ancak Local Storage kalıcıdır ve kullanıcı tarafından silinmedikçe kalırken, Session Storage sadece tarayıcı oturumu sırasında varlığını sürdürür. Cookie, tüm alan adları arasında paylaşılabilirken, Local Storage ve Session Storage yalnızca aynı alan adları arasında paylaşılabilir.
 
-19. asenkron ve senkron işlem farkı nedir
+## 19. asenkron ve senkron işlem farkı nedir
 
 Senkron (synchronous) ve asenkron (asynchronous) işlem, programlama ve bilgisayar bilimlerinde önemli bir kavramdır ve bu iki işlem türü arasında önemli farklar bulunmaktadır. İşte senkron ve asenkron işlemlerin temel farkları:
 
@@ -677,7 +680,7 @@ Senkron (synchronous) ve asenkron (asynchronous) işlem, programlama ve bilgisay
 
 Özetle, senkron işlemde işlemler sırayla ve beklemeli bir şekilde gerçekleşirken, asenkron işlemde işlemler eşzamansız olarak çalışabilir ve bir işlem diğerini beklemeksizin devam edebilir. Asenkron işlemler, uzun süren işlemlerle başa çıkmak ve uygulamaları daha hızlı ve daha verimli hale getirmek için yaygın olarak kullanılır.
 
-20. promise nedir ve neden ihtiyaç duyarız
+## 20. promise nedir ve neden ihtiyaç duyarız
 
 Promise, JavaScript'in asenkron işlemleri yönetmek için kullanılan bir yapıdır. Promise'ler, özellikle ağ istekleri, dosya okuma/yazma işlemleri veya zaman alıcı işlemler gibi uzun süren işlemleri yönetmek için oldukça kullanışlıdır. Promise'ler, bir işlemin sonucunu (başarılı veya başarısız) temsil eden bir nesne olarak işlev görürler.
 
@@ -696,3 +699,22 @@ Promise'lerin neden ihtiyaç duyulduğunu anlamak için bazı senaryoları ele a
    Promise'ler, birçok asenkron işlemi birbirine bağlayarak sıralı bir şekilde çalıştırmak için kullanılabilir. Bu, işlemleri belirli bir sıraya göre gerçekleştirmek için idealdir.
 
 Promise'ler, JavaScript'in daha güçlü ve daha karmaşık asenkron işlemleri ele alabilmesini sağlar. Bu nedenle, modern JavaScript uygulamalarının vazgeçilmez bir parçasıdır ve kodun daha düzenli, okunabilir ve yönetilebilir olmasına yardımcı olurlar.
+
+## 21. slice ile splice farkı nedir
+
+`slice()` ve `splice()` dizilerle çalışırken sıkça kullanılan iki farklı diziyi manipüle etme yöntemidir ve önemli farklar içerir:
+
+1. `slice()` Yöntemi:
+
+   - `slice()` yöntemi, bir dizinin belirli bir kısmını kopyalar ve bu kopyayı yeni bir dizi olarak döndürür.
+   - Orijinal diziyi değiştirmez, sadece kopyalar.
+   - `slice()` yöntemi, başlangıç ve bitiş indisleri arasındaki elemanları alır ve bu elemanları yeni bir dizi olarak döndürür. Başlangıç ve bitiş indisleri varsayılan olarak sırasıyla 0 ve dizinin uzunluğu olarak kabul edilir.
+   - Örneğin: `dizi.slice(1, 4)` ifadesi, dizinin 1. indisinden 3. indise kadar olan elemanları kopyalar ve yeni bir dizi olarak döndürür.
+
+2. `splice()` Yöntemi:
+   - `splice()` yöntemi, bir diziyi değiştirir ve diziden elemanları kaldırabilir, ekleyebilir veya değiştirebilir.
+   - Orijinal diziyi değiştirir, kopya oluşturmaz.
+   - `splice()` yöntemi, başlangıç indisini, kaç elemanın silineceğini ve gerekirse yeni elemanları kabul eden bir dizi içerir. Bu yöntem, başlangıç indisi ile başlar, belirtilen sayıdaki elemanı kaldırır ve istenilen yeni elemanları ekler.
+   - Örneğin: `dizi.splice(1, 2, "Yeni1", "Yeni2")` ifadesi, dizinin 1. indisinden başlayarak 2 elemanı kaldırır ve yerine "Yeni1" ve "Yeni2" elemanlarını ekler.
+
+Özetle, `slice()` yöntemi sadece kopyalar ve orijinal diziyi değiştirmezken, `splice()` yöntemi diziyi değiştirir ve elemanları kaldırabilir veya ekleyebilir. Bu iki yöntemi kullanırken dikkatli olmalısınız, çünkü dizinin orijinal durumunu değiştirebilirsiniz.
