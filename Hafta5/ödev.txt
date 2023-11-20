@@ -1,0 +1,13 @@
+npm
+yarn
+pnpm
+
+aralarındaki farka bak. hangi ihtiyaçlara göre hangisini tercihh ederiz?
+
+class-validator modülünü incele.
+
+ENV
+
+git flow
+
+Bu hafta yapılan projeye getUserWithNotes yazdırmaya çalış

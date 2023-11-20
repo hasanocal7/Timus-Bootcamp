@@ -1,0 +1,59 @@
+res.cookie("Refresh Token", refreshToken, { BURAYA GELEN PARAMETRELER ÖDEV (sameSite, http) }).header("Authorization", accessToken)
+
+domain: Cookie için alan adı. Varsayılan olarak uygulamanın etki alanı adıdır.
+encode: Cookie değeri kodlaması için kullanılan eşzamanlı bir fonksiyon. Varsayılan değer encodeURIComponent'tir.
+expires: Cookie GMT cinsinden son kullanma tarihi. Belirtilmezse veya 0 olarak ayarlanırsa, bir oturum çerezi oluşturur.
+httpOnly: Cookie yalnızca web sunucusu tarafından erişilebilir olmasını işaretler.
+maxAge: Geçerli zamana göre milisaniye cinsinden sona erme süresini ayarlamak için kullanışlı seçenek.
+path: Çerez için yol. Varsayılan değer "/" dir.
+priority: Set-Cookie niteliğinin değeri.
+secure: Cookie yalnızca HTTPS ile kullanılmak üzere işaretler.
+signed: Cookie imzalanıp imzalanmayacağını belirtir.
+
+SameSite bir çerez (cookie) özelliğidir ve çerezin nasıl paylaşılacağını belirler. Çerezler, web tarayıcıları tarafından kullanıcı bilgilerini depolamak için kullanılır. SameSite özelliği, çerezin belirli bir web sitesi dışındaki isteklere nasıl yanıt vereceğini kontrol etmek için kullanılır.
+
+SameSite özelliği üç farklı değer alabilir:
+
+    Strict (Katı): Eğer bir çerezin SameSite=Strict olarak ayarlanmışsa, çerez sadece aynı alan adına sahip bir web sitesi tarafından yapılan isteklere eşlik eder. Başka bir web sitesinden yapılan isteklere çerez eklenmez.
+
+    Lax: Eğer bir çerezin SameSite=Lax olarak ayarlanmışsa, çerez yalnızca üçüncü taraf kaynaklara yapılan "top level" (sayfanın tamamını içeren) isteklere eşlik eder. Örneğin, bir harici kaynak tarafından yüklenen bir görüntünün URL'sine yapılan bir istek, çerezin eklenmesine izin verir. Ancak, örneğin bir iframe içinden yapılan isteklerde çerez eklenmez.
+
+    None (Hiçbiri): Eğer bir çerezin SameSite=None olarak ayarlanmışsa, çerez her türlü isteğe eşlik eder, bu da çerezin üçüncü taraf sitelerle paylaşılmasına izin verir. Ancak, bu durumda Secure özelliği de kullanılmalıdır, yani çerez sadece güvenli (HTTPS) bağlantılarda paylaşılabilir.
+
+SameSite özelliği, çerez tabanlı güvenlik sorunlarını azaltmaya ve tarayıcılar arasında tutarlı bir davranış sağlamaya yönelik bir çaba olarak ortaya çıkmıştır. Özellikle, tarayıcıların üçüncü taraf çerezlere getirdikleri sınırlamaların ve standartların uyumlu bir şekilde uygulanmasına yardımcı olur.
+
+-------------------------------------------------------------
+
+mongoose connect options parametreleri
+
+useNewUrlParser:
+Bu seçenek, MongoDB'nin sürüm 3.1.0 ve üzeri için gerekli olan yeni URL ayrıştırıcıyı etkinleştirir.
+
+useUnifiedTopology:
+Bu seçenek, MongoDB sürüm 3.1.0 ve üzeri için etkinleştirilen yeni bağlantı topolojisini kullanır.
+
+
+useCreateIndex:
+Bu seçenek, mongoose tarafından tanımlanan şemalardaki index özelliklerini kullanarak MongoDB'de index oluşturur.
+
+
+useFindAndModify:
+Bu seçenek, findOneAndUpdate() ve findOneAndRemove() gibi eski MongoDB sürümlerinde kullanılan findAndModify komutunu kullanır.
+
+
+autoIndex:
+Bu seçenek, şema indeksleri otomatik olarak oluşturulsun mu yoksa manuel olarak oluşturulsun mu konusunda kontrol sağlar.
+
+poolSize:
+Bu seçenek, bağlantı havuzundaki bağlantı sayısını belirler.
+
+socketTimeoutMS:
+Bu seçenek, soket bağlantısının zaman aşımını belirler.
+
+--------------------------------------------------------------------
+
+mongoose.findOneAndUpdate(..., {upsert: true}) => neden?
+
+upsert => (update+insert)
+
+Upsert, bir veri bulunamadığı zaman o veri ekler (insert) eğer bulduysa da günceller.
