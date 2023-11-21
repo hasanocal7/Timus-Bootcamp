@@ -1,11 +1,10 @@
-const generate = require("../utils/generate");
-const Joi = require("joi");
-
-const Employee = Joi.object({
-  id: Joi.string().required(),
-  name: Joi.string().required(),
-  age: Joi.number().integer().required(),
-  stillEmployee: Joi.boolean().required(),
-});
+class Employee {
+  constructor(id, name, age, stillEmployee) {
+    this.id = id;
+    this.name = name;
+    this.age = age;
+    this.stillEmployee = stillEmployee;
+  }
+}
 
 module.exports = Employee;
