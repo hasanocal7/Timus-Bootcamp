@@ -1,4 +1,4 @@
-const validationEmail = require("../../validations/validationEmail");
+const validationEmail = require("../utils/validations/validationEmail");
 
 module.exports = (req, res, next) => {
   try {

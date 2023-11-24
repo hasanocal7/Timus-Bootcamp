@@ -15,10 +15,6 @@ const validationEmployee = (name, age, stillEmployee) => {
     throw new Error("Age's type must be Number");
   }
 
-  if (!stillEmployee) {
-    throw new Error("stillEmployee is required");
-  }
-
   if (typeof stillEmployee != "boolean") {
     throw new Error("stillEmployee's type must be Boolean");
   }

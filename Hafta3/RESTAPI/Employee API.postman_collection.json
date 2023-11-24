@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "ad214b93-e81d-4911-821d-37768ed853f8",
+		"name": "Employee API",
+		"description": "The Employee API is a tool designed for a user's company to list employees and specifically an employee, register and delete employees, update employee information.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29966577"
+	},
+	"item": [
+		{
+			"name": "loginUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accessToken",
+						"value": "7dwrremwpr3u",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "userEmail",
+						"value": "admin@timus.com",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"admin@timus.com\",\r\n    \"password\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}/v1",
+				"description": "To get the token that will allow us to fulfill our requests, we first need to create a login and I have limited it to email=\"[admin@timus.com](https://mailto:admin@timus.com)\" and password=\"123\"."
+			},
+			"response": []
+		},
+		{
+			"name": "createEmployee",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accessToken",
+						"value": "5zh69sozg2jc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Hasan Ocal\",\r\n    \"age\": 22,\r\n    \"stillEmployee\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}/v1/employees",
+				"description": "The validity required to create employee data is that the information matches the required types and is not empty."
+			},
+			"response": []
+		},
+		{
+			"name": "getAllEmployees",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accessToken",
+						"value": "7dwrremwpr3u",
+						"type": "text"
+					}
+				],
+				"url": "{{baseUrl}}/v1/employees",
+				"description": "Listing of all employee information"
+			},
+			"response": []
+		},
+		{
+			"name": "getEmployee",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accessToken",
+						"value": "7dwrremwpr3u",
+						"type": "text"
+					}
+				],
+				"url": "{{baseUrl}}/v1/employees/fr3x6oyqx5ct5ktyui0dc83g1",
+				"description": "The parameter required to list the information of a single employee is the user-specific id parameter."
+			},
+			"response": []
+		},
+		{
+			"name": "updateEmployee",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "accessToken",
+						"value": "xxybkg75jg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Hasan Öcal\",\r\n    \"age\": 23,\r\n    \"stillEmployee\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}/v1/employees/fr3x6oyqx5ct5ktyui0dc83g1",
+				"description": "To update user information, we need the id parameter which is specific to the user. But the important point here is that the necessary validation processes are also processed here before creating employee data."
+			},
+			"response": []
+		},
+		{
+			"name": "deleteEmployee",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "accessToken",
+						"value": "7dwrremwpr3u",
+						"type": "text"
+					}
+				],
+				"url": "{{baseUrl}}/v1/employees/fr3x6oyqx5ct5ktyui0dc83g1",
+				"description": "To delete user information, we need the user-specific id parameter. As a fallback, I set an answer close to the user-specific id that the user entity no longer exists."
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:3000/api",
+			"type": "string"
+		}
+	]
+}

@@ -62,7 +62,8 @@ const removeEmployee = async (req, res) => {
   try {
     const id = req.params.id;
     const removed = await deleteEmployee(id);
-    if (removed !== -1) {
+    console.log(removed);
+    if (removed != -1) {
       res.status(200).json({
         message: `${id} was removed`,
       });

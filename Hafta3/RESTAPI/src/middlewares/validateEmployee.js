@@ -1,4 +1,4 @@
-const validationEmployee = require("../../validations/validationEmployeeObject");
+const validationEmployee = require("../utils/validations/validationEmployeeObject");
 
 const validateEmployee = (req, res, next) => {
   try {
