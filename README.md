@@ -6,3 +6,5 @@
 - [4.Hafta](/Hafta4)
 - [5.Hafta](/Hafta5)
 - [6.Hafta](/Hafta6)
+- [7.Hafta](/Hafta7)
+- [8.Hafta](/Hafta8)
